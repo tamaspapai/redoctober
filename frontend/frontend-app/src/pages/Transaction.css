@@ -1,7 +1,21 @@
-.title {
+.header {
     text-align: left;  
-    background: '#001529'
+    background: '#001529';
+    padding-left: 4px;
 }
+
+.filter {
+    text-align: left;
+    font-size: 16px;
+    padding-top: 8px;
+    background-color: #eaecee;
+    border-left: 12px solid #eaecee;
+    border-right: 12px solid #eaecee;
+}
+.filterLabel{    
+    padding-right: 8px;    
+}
+
 .transactions {
     max-width: 650px;
     min-height: 100vh;
@@ -26,7 +40,7 @@
 }
 
 .paidcategory {
-    width: 400px;
+    width: 420px;
     justify-content: center;
 }
 
