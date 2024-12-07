@@ -1,0 +1,54 @@
+.title {
+    text-align: left;  
+    background: '#001529'
+}
+.transactions {
+    max-width: 650px;
+    min-height: 100vh;
+    text-align: center;
+    margin: auto;
+    background-color: #eaecee;
+}
+
+.transaction {   
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    border: 12px solid #eaecee;    
+}
+
+.icon {
+    width: 48px;
+    font-size: 32px;
+    vertical-align: middle;
+}
+
+.paidcategory {
+    width: 400px;
+    justify-content: center;
+}
+
+.category {
+    text-align: left;
+    min-width: 400px;
+    font-size: 20px;
+}
+
+.paid {
+    text-align: left;
+    min-width: 400px;
+    font-size: 12px;
+}
+
+
+.sum {
+    width: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: end;
+    vertical-align: middle;
+    top: 20%;
+    position: relative;
+}
