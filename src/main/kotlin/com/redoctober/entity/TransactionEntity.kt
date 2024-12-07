@@ -6,6 +6,7 @@ import lombok.Builder
 import lombok.Data
 import lombok.NoArgsConstructor
 import java.time.Instant
+import java.time.LocalDate
 
 @Entity
 @Table(name = "transaction")
@@ -16,13 +17,15 @@ import java.time.Instant
 data class TransactionEntity(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long = 0,
+    var id: Long = 0,
 
-    var summary: String,
+    var summary: String = "",
 
-    var category: String,
+    var category: Categories = Categories.MISC,
 
-    var currency: String,
+    var currency: String = "HUF",
 
-    var paid: Long
+    var sum: Long = 0,
+
+    var paid: Long = Instant.now().toEpochMilli()
 )
