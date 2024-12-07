@@ -6,7 +6,6 @@ import lombok.Builder
 import lombok.Data
 import lombok.NoArgsConstructor
 import java.time.Instant
-import java.time.LocalDate
 
 @Entity
 @Table(name = "transaction")
@@ -17,11 +16,11 @@ import java.time.LocalDate
 data class TransactionEntity(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    var id: Long = 0,
+    var id: Long? = null,
 
     var summary: String = "",
 
-    var category: Categories = Categories.MISC,
+    var category: CategoryEnum = CategoryEnum.MISC,
 
     var currency: String = "HUF",
 

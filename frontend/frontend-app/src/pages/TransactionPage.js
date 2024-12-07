@@ -101,7 +101,7 @@ const TransactionPage = () => {
                                 {iconMap[tr.category]}
                             </div>
                             <div className={"paidcategory"}>
-                                <div className={"category"}>{tr.category}</div>                            
+                                <div className={"category"}>{tr.summary}</div>                            
                                 <div className={"paid"}>{tr.paid}</div>
                             </div>                            
                             <div className={"sum"}>{formatNumber(tr.sum)} {tr.currency}</div>

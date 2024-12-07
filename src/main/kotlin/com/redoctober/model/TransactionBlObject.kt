@@ -17,7 +17,7 @@ data class TransactionBlObject(
             val dateFormat = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
             return TransactionBlObject(
                 dateFormat.format(Date(transactionEntity.paid)),
-                transactionEntity.id,
+                transactionEntity.id!!,
                 transactionEntity.summary,
                 transactionEntity.category.category,
                 transactionEntity.currency,

@@ -1,6 +1,6 @@
 package com.redoctober.entity
 
-enum class Categories(val category: String, val id: Int) {
+enum class CategoryEnum(val category: String, val id: Int) {
     HOUSING("housing", 1),
     TRAVEL("travel", 2),
     FOOD("food", 3),

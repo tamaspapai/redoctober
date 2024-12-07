@@ -13,12 +13,13 @@ class TransactionService(private val repository: TransactionRepository) {
 
     fun save(book: TransactionEntity): TransactionEntity = repository.save(book)
 
-    fun update(id: Long, updatedTransaction: TransactionEntity): TransactionEntity {
+    fun update(id: Long, updated: TransactionEntity): TransactionEntity {
         val tr = findById(id)
-        tr.summary = updatedTransaction.summary
-        tr.paid = updatedTransaction.paid
-        tr.category = updatedTransaction.category
-        tr.currency = updatedTransaction.currency
+        tr.summary = updated.summary
+        tr.paid = updated.paid
+        tr.category = updated.category
+        tr.currency = updated.currency
+        tr.sum = updated.sum
         return repository.save(tr)
     }
 
